@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Emilie MK | Portfolio</title>
+  <link rel="stylesheet" href="workgallery.css"/>
+  <link rel="stylesheet" href="main.css"/>
+  <link rel="stylesheet" href="modal.css"/>
+  <link rel="stylesheet" href="https://use.typekit.net/lgk4qrb.css"> <!-- adobe fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Proza+Libre&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+
+  <script src="main.js" charset="utf-8"></script>
+  <script src="modal.js" charset="utf-8"></script>
+  </head>
+
+<body class="body">
+
+<div class="grid-container">
+  <div id="header">
+    <div class="header-container">
+
+      <div id="logo">
+        <a id="logotext"href="#landing">emilie mk</a>
+      </div>
+
+      <div class="nav">
+        <ul>
+          <li><a href="#landing">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#work">WORK</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<div class="slider">
+    <div class="landing snaprow" id="landing">
+      <div class="container">
+          <p> </p> <!-- needs to be here for landing to be correct size??-->
+          <img class="landinglogo" src="img/personliglogohvit.svg"/>
+      </div>
+    </div>
+
+
+          <section class="snaprow work1" id="work">
+            <div class="overlay">
+              <div class="workDescription" >
+                <img class="open" onclick="workFunc(0, this);" src="img/close.png"/>
+                <div class="workDescriptionContent">
+                  <p> DESIGN</p>
+                  <h3 class="link" onclick="workFunc(0, this);"> weather app </h3>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="snaprow work2" id="work">
+            <div class="overlay">
+              <div class="workDescription" >
+                <img class="open" onclick="workFunc(1, this);" src="img/close.png"/>
+                <div class="workDescriptionContent">
+                  <p> DESIGN</p>
+                  <h3 class="link" onclick="workFunc(1, this);"> travel website </h3>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+      <div class="about snaprow" id="about">
+
+          <h5>ABOUT</h5>
+          <p class="subheader"> I'm currently studying both the bachelor program in Marketing & Brand Management at Kristiania University College and the bachelor program in Interaction Design at the University of Bergen.</p>
+        <div class="aboutContainer">
+            <div class="focusAreas">
+              <div class="about-left">
+              <div class="focusText">
+              <div class="focusColumn">
+                <h4>Marketing background</h4>
+                <p> I believe in the importance of seeing all meeting points between a company and it's target audience as
+                  an opportunity for communication, and see the importance of recognizing that all communication between
+                  company and user is part of a bigger marketing process and customer-relationship.
+                </p>
+              </div>
+              <div class="focusColumn fc2">
+                <h4>User-centered Design</h4>
+                <p>When designing I always design with the user in mind. Planning the whole design process around the users with research
+                  and usability testing as the base is key to good interaction design.
+                </p>
+              </div>
+            </div>
+              <!--<a href="aboutpage.html"><button class="button" style="align: middle;"> <span> Read more about me </span></button></a>
+              -->
+            </div>
+              <div class="focusColumnImg">
+                <img src="img/profilbildesqr.jpg"></img>
+              </div>
+            </div>
+
+      </div>
+    </div>
+
+
+<div id="contact" class="snaprow">
+  <h5> CONTACT </h5>
+  <p class="subheader email">emilie@munthe-kaas.net</p>
+  <a href="https://www.linkedin.com/in/emiliemmk/" target="_blank">
+    <img alt="LinkedIn-profile" src="img/linkedin.png">
+  </a>
+  <a href="http://app.wa.works/public/profile?code=4b8b296e-94f0-4c41-93e8-69d3cc599f18" target="_blank">
+    <img alt="Wa-profile" src="img/wa.png">
+  </a>
+
+</div>
+
+</div> <!-- SLIDER END -->
+
+
+
+
+
+<!------------------------------------------------------------------------------------------>
+      <!-- THE MODALS FOR WORKS (placed here to cover everything except the header)-->
+      <div id="myModal1" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close"> <img src="img/close.png"/> </span>
+          <div class="modal-body">
+            <iframe id="iframe" src="weatherapp.html" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div id="myModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close"> <img src="img/close.png"/> </span>
+          <div class="modal-body">
+            <iframe id="iframe" src="auroraway.html" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div id="myModal3" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close"> <img src="img/close.png"/> </span>
+          <div class="modal-body">
+            <iframe id="iframe" src="weatherapp.html" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div id="myModal4" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close"> <img src="img/close.png"/> </span>
+          <div class="modal-body">
+            <iframe id="iframe" src="auroraway.html" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+
+
+</div> <!-- GRID CONTAINER END -->
+
+<!--
+<div class="footer">
+  <p class="cright">Copyright &copy <script type="text/JavaScript">document.write(new Date().getFullYear());</script><p>
+
+    <p>Emilie Munthe-Kaas </p>
+</div>
+-->
+
+</body>
+</html>
